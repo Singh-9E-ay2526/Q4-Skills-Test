@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 SkillsTest1</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient">
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                📚 Digital Learning Hub
+            </span>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow-lg login-card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4 text-primary">
+                            👤 Student Login
+                        </h2>
+                        
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label fw-bold">Username</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="username" 
+                                    placeholder="Enter your username"
+                                    required
+                                >
+                                <small class="text-muted">Demo: student123</small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label fw-bold">Password</label>
+                                <input 
+                                    type="password" 
+                                    class="form-control" 
+                                    id="password" 
+                                    placeholder="Enter your password"
+                                    required
+                                >
+                                <small class="text-muted">Demo: password123</small>
+                            </div>
+
+                            <button type="submit" class="btn btn-success w-100 fw-bold mb-2">
+                                ➜ Login
+                            </button>
+                        </form>
+
+                        <div id="errorAlert" class="alert alert-danger alert-dismissible fade" role="alert" style="display:none;">
+                            ⚠️ <span id="errorMessage"></span>
+                        </div>
+
+                        <div id="successAlert" class="alert alert-success alert-dismissible fade" role="alert" style="display:none;">
+                            ✓ <span id="successMessage"></span>
+                        </div>
+
+                        <hr>
+
+                        <div class="text-center">
+                            <p class="text-muted small">
+                                Access your course materials and track your progress
+                            </p>
+                            <a href="https://www.w3schools.com" target="_blank" class="btn btn-outline-info btn-sm">
+                                📚 Learning Resources
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-center text-muted mt-4 small">
+                    © 2025-2026 Digital Learning Hub | Quarter 4 SkillsTest
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
